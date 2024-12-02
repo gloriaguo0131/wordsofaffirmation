@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <video class="background-video" id="background-video" autoplay muted loop playsinline>
+        <source id="background-source" src="background.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>    
+    
+    <!-- Camera Container -->
+    <div class="container">
+        <div id="statusMessage">Attempting to access the camera...</div>
+        <video id="videoElement" autoplay playsinline></video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
